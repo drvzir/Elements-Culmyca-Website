@@ -1,1 +1,0 @@
-# Culmyca-Fest-website

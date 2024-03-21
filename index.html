@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/ec.png" type="image/x-icon">
+    
+    <style type="text/css">
+    .loader-bg {position: fixed;z-index: 99999;background: rgb(19, 18, 18);height: 100%;width: 100%;opacity: 1;overflow: hidden;}.loader{position: absolute;top: 45vh;left: 45vw;}.loader img {height: 20vh;animation: loader 0.7s linear infinite alternate;}
+    @keyframes loader {
+      from {
+        transform: translateY(0%);
+      }
+      to {
+        transform: translateY(-25%);
+      }
+    }
+  </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css""></noscript>
+
+    <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
+    
+    <link rel="preload" href="./landing_styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./landing_styles.css"></noscript>
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="timeline.css">
+
+    <!-- <link rel="stylesheet" href="./assets/pointer/pointer.css"> -->
+   
+    
+    <title>Elements Culcmyca '23</title>
+</head>
+<body>
+    <div class="loader-bg">
+      <div class="loader"><img src="./assets/preloader.webp" alt="Preloader"></div>
+    </div>
+    <div class="well" id="well">
+      <a href="#top" title="Back to top"><button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button></a>
+        <div class="banner panel" id="top">
+
+          <div class="logos">
+            <img src="assets/ECLOGO.png">
+          </div>
+            
+            <nav id="nav" data-aos="menu-area" data-aos-anchor-placement="bottom-top" >
+              <a title="About" href="#about_anchor">About</a>
+              <a title="Timeline" href="#events_anchor">Events</a>
+              <a title="Pronites" href="#pronites_anchor">Pronites</a>
+              <a title="Sponsors" href="#sponsors_anchor">Sponsors</a>
+              <a title="Contact" href="#contact_anchor">Contact</a>
+              
+              <a title="Profile" href="./profile/" class="profile show"></a>
+            </nav>
+
+          <div class="bg"> <img src="gallery/concert.jpg"></div>
+
+
+            <div class="heading">
+                
+                <h1>ELEMENTS CULMYCA</h1>
+                <p>27th June 2024 - 30th June 2024</p>
+                <p>JC Bose UST annual techno-cultural fest</p>
+                
+
+                <div class="register-button"><div class="left"></div><a title="Register" style="--clr:#1e9bff" href="./RegisterLogin/">Enter !</a><div class="right"></div></div>
+                <div class="logout-button"><div class="left">  </div><a href="#">Log Out</a><div class="right"></div></div>
+
+                <!-- //countdown timer -->
+                <div id="countdown">
+                  <ul>
+                    <li><div id="days"></div>days</li>
+                    <li><div id="hours"></div>Hours</li>
+                    <li><div id="minutes"></div>Minutes</li>
+                    <li><div id="seconds"></div>Seconds</li>
+                  </ul>
+                </div>
+            </div>  
+        </div>
+     <div class="content">
+          <div class="about panel" id="about_anchor">
+            <!-- sidebar -->
+            <div class="nav-checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+                </label> 
+                <div class="sidebar">
+                    <header>Explore</header>
+                    <a title="Homepage" href="#top" class="active">
+                        <i class="fas fa-rocket"></i>
+                        <span>Homepage</span>
+                    </a>
+                    <a title="Sign-in" href="./RegisterLogin/" class="in">
+                        <i class="fas fa-user"></i>
+                        <span>Sign-in</span>
+                    </a>
+                    <a title="Goodies" href="photogallery.html">
+                        <i class="fas fa-camera"></i>
+                        <span>Gallery</span>
+                    </a>
+                    <a title="FAQ" href="team.html">
+
+                        <i class="fas fa-user-friends"></i>
+                        <span>Developer</span>
+                    </a>
+                    <a title="FAQ" href="goodies/index.html">
+
+                      <i class="fas fa-vest"></i>
+                      <span>Goodies</span>
+                  </a>
+                </div>
+              </div>
+
+
+            <div class="about-box">
+                <h1>About</h1>
+
+                
+   <div class="carousel">
+    <div class="carousel_inner">
+       <div class="carousel_item carousel_item__active">
+          <img src="./assets/pg3.jpg" alt="" class="carousel_img">
+          <div class="carousel_caption">
+             <h1 class="carousel_title"></h1>
+             <p class="carousel_description"></p>
+          </div>
+       </div>
+       <div class="carousel_item">
+          <img src="./assets/pg2.jpg" alt="" class="carousel_img">
+       </div>
+       <div class="carousel_item">
+          <img src="./assets/pg1.jpg" alt="" class="carousel_img">
+       </div>
+       <div class="carousel_item">
+        <img src="./assets/pg4.png" alt="" class="carousel_img">
+     </div>
+     <div class="carousel_item">
+      <img src="./assets/pg5.png" alt="" class="carousel_img">
+   </div>
+   <div class="carousel_item">
+    <img src="./assets/pg6.png" alt="" class="carousel_img">
+ </div>
+ <div class="carousel_item">
+  <img src="./assets/pg7.png" alt="" class="carousel_img">
+</div>
+<div class="carousel_item">
+  <img src="./assets/pg8.png" alt="" class="carousel_img">
+</div>
+<div class="carousel_item">
+  <img src="./assets/pg9.jpg" alt="" class="carousel_img">
+</div>
+    </div>
+
+    <div class="carousel_indicator">
+       <button class="carousel_dot carousel_dot__active"></button>
+       <button class="carousel_dot"></button>
+       <button class="carousel_dot"></button>
+       <button class="carousel_dot"></button>
+       <button class="carousel_dot"></button>
+       <button class="carousel_dot"></button>
+       <button class="carousel_dot"></button>
+       <button class="carousel_dot"></button>
+       <button class="carousel_dot"></button>
+    </div>
+
+    <div class="carousel_control">
+       <button class="carousel_button carousel_button__prev">
+          <i class="fas fa-chevron-left"></i>
+       </button>
+       <button class="carousel_button carousel_button__next">
+          <i class="fas fa-chevron-right"></i>
+       </button>
+    </div>
+ </div>
+
+
+
+
+
+
+                <p class="about-text">The most awaited fest of our region! After the tough covid years, we are back with a bang! Bringing you an amazing learning and fun experience. Do not miss ELEMENTS CULMYCA 2023  !!!</p>
+            </div>  
+          </div>
+
+
+          <!-- timeline-->
+
+          
+<h1>Our Process</h1>
+<br> 
+<div class="process-wrapper" id="events_anchor">
+  <h1>
+    EVENTS
+  </h1>
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">DAY 1</div></li>
+		<li class="step step02"><div class="step-inner">PRONITE 1</div></li>
+		<li class="step step03"><div class="step-inner">DAY 2</div></li>
+		<li class="step step04"><div class="step-inner">PRONITE 2</div></li>
+		 <li class="step step05"><div class="step-inner">DAY 3</div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>DAY 1</h2>
+		<p>The first day starts off with artistic competitions like <ul><li><a href="EventPages\tattooart.html">Tattoo Art</a></li><li><a href="EventPages/snapapic.html">Snap a pic</a></li><li><a href="EventPages\kalakriti.html">Kalakriti</a></li></ul></p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>PRONITE 1</h2>
+		<p>Get ready for a fun and information packed night with one of the greatest educator, AMAN DHATTARWAL followed by the LUV BABBAR</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>DAY 2</h2>
+		<p>Second day focuses on Technical events like <ul><li><a href="EventPages/codewars.html"> Code Wars</a></li><li><a href="EventPages/battleofbands.html">Battle of the Bands</a></li><li><a href="EventPages/valoqual.html">Valorant</a></li></ul></p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>PRONITE 2</h2>
+		<p>A musical symphony presented by the amazing - MILLIND GABA, followed by everyone's favorite -SANDEEP MAHESHWARI </p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>DAY 3</h2>
+		<p>The fest concludes with <ul><li><a href="EventPages/conqr.html">CON-QR</a></li><li><a href="EventPages\nataak.html"> NUKADD NATAK COMPETITION</a></li><li><a href="EventPages/baatcheet.html"> BAAT-CHEET - The Debating Competition</a></li></ul></p>
+	</div>
+	</div>
+  <div id="particles-js"></div>
+</div>
+
+          
+      
+     
+
+
+      
+    <div class="container">
+      <div class="prohead" id="pronites_anchor"><h1>PRONITES</h1></div>
+      <div class="item-container">
+          <div class="img-container">
+              <img src="./assets/lovebabbar.png" alt="Event image">
+          </div>
+
+          <div class="body-container">
+              <div class="overlay"></div>
+
+              <div class="event-info">
+                  <p class="title">LOVE BABBAR</p>
+                  <div class="separator"></div>
+                  <p class="info">5PM ONWARDS</p>
+                  <p class="price">JUNE 27, 2023  </p>
+
+                  <div class="additional-info">
+                      <p class="info">
+                          <i class="fas fa-map-marker-alt"></i>
+                          Main Ground
+                      </p>
+                      <p class="info">
+                          <i class="far fa-calendar-alt"></i>
+                          Sat, Sep 19, 10:00 AM EDT
+                      </p>
+
+                      <p class="info description">
+                          Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                          to share yours with us! We meet one Sunday evening <span>more...</span>
+                      </p>
+                  </div>
+              </div>
+              <button class="action" onclick="window.open('https://forms.gle/2S3FoFF7yWHmgTmS7','_blank');" target="_blank"
+              >Book it</button>
+          </div>
+      </div>
+
+      <div class="item-container">
+          <div class="img-container">
+              <img src="./assets/aman.png" alt="Event image">
+          </div>
+
+          <div class="body-container">
+              <div class="overlay"></div>
+
+              <div class="event-info">
+                  <p class="title">Aman Dhattarwal</p>
+                  <div class="separator"></div>
+                  <p class="info">7PM ONWARDS</p>
+                  <p class="price">JULY 27, 2023</p>
+
+                  <div class="additional-info">
+                      <p class="info">
+                          <i class="fas fa-map-marker-alt"></i>
+                          MAIN GROUND
+                      </p>
+                      <p class="info">
+                          <i class="far fa-calendar-alt"></i>
+                          Sat, Sep 19, 10:00 AM EDT
+                      </p>
+
+                      <p class="info description">
+                          Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                          to share yours with us! We meet one Sunday evening <span>more...</span>
+                      </p>
+                  </div>
+              </div>
+              <button class="action" onclick="window.open('https://forms.gle/2S3FoFF7yWHmgTmS7','_blank');" target="_blank">Book it</button>
+          </div>
+      </div>
+
+      <div class="item-container">
+          <div class="img-container">
+              <img src="./assets/sandeep.png" alt="Event image">
+          </div>
+
+          <div class="body-container">
+              <div class="overlay"></div>
+
+              <div class="event-info">
+                  <p class="title">SANDEEP MAHESHWARI</p>
+                  <div class="separator"></div>
+                  <p class="info">4PM ONWARDS</p>
+                  <p class="price">JULY 28, 2023</p>
+
+                  <div class="additional-info">
+                      <p class="info">
+                          <i class="fas fa-map-marker-alt"></i>
+                          MAIN GROUND
+                      </p>
+                      <p class="info">
+                          <i class="far fa-calendar-alt"></i>
+                          Sat, Sep 19, 10:00 AM EDT
+                      </p>
+
+                      <p class="info description">
+                          Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                          to share yours with us! We meet one Sunday evening <span>more...</span>
+                      </p>
+                  </div>
+              </div>
+              <button class="action" onclick="window.open('https://forms.gle/2S3FoFF7yWHmgTmS7','_blank');" target="_blank">Book it</button>
+          </div>
+      </div>
+
+      <div class="item-container">
+          <div class="img-container">
+              <img src="./assets/millind.png" alt="Event image">
+          </div>
+          
+
+          <div class="body-container">
+              <div class="overlay"></div>
+
+              <div class="event-info">
+                  <p class="title">Millind Gaba</p>
+                  <div class="separator"></div>
+                  <p class="info">7PM ONWARDS</p>
+                  <p class="price">JUNE 28, 2023</p>
+
+                  <div class="additional-info">
+                      <p class="info">
+                          <i class="fas fa-map-marker-alt"></i>
+                          MAIN GROUND
+                      </p>
+                      <p class="info">
+                          <i class="far fa-calendar-alt"></i>
+                          Sat, Sep 19, 10:00 AM EDT
+                      </p>
+
+                      <p class="info description">
+                          Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                          to share yours with us! We meet one Sunday evening <span>more...</span>
+                      </p>
+                  </div>
+              </div>
+              <button class="action" onclick="window.open('https://forms.gle/2S3FoFF7yWHmgTmS7','_blank');" target="_blank">Book it</button>
+          </div>
+      </div>
+  </div>
+
+
+
+
+  
+
+      
+
+      <div class="sponsor-body" id="sponsors_anchor">
+        <div class="sponsor-header"><h1>SPONSORS</h1></div>
+            <div class="sponsor-header-mob"><h1>SPONSOR</h1></div>
+
+    <figure class="icon-cards">
+      <div class="icon-cards__content">
+        <div
+          class="icon-cards__item"
+        >
+          <span class="h1"
+            ><img
+              src="./assets/UBER.jpeg" alt="Discord"
+          /></span>
+        </div>
+        <div
+          class="icon-cards__item"
+        >
+          <span class="h1"
+            ><img
+              src="assets/LAVANYA.jpeg" alt="Amazon"
+          /></span>
+        </div>
+        <div
+          class="icon-cards__item"
+        >
+          <span class="h1"
+            ><img
+              src="assets/smaash.jpeg" alt="spacex"
+          /></span>
+        </div>
+
+        <div
+          class="icon-cards__item"
+        >
+          <span class="h1"
+            ><img
+              src="assets/Starbucks.jpg" alt="spacex"
+          /></span>
+        </div>
+
+      </div>
+    </figure>
+    </div>
+  
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content" id="contact_anchor">
+            <h3>ELEMENTS CULMYCA '23</h3>
+           <!-- <ul class="links">
+              <li><a href="./RegisterLogin/">Register</a></li>
+              <li><a href="./goodies/">Goodies</a></li>
+              <li><a href="./faqpage/">FAQ</i></a></li>
+          </ul>-->
+            <p>Contact us at : 9999288739</p>
+            <p>Reach us at : <a href="mailto:21001011010@jcboseust.ac.in">21001011010@jcboseust.ac.in</a></p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/JCBoseUST/"><i class="fab fa-facebook"></i></a></li>
+               <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
+                <li><a href="https://www.instagram.com/elementsculmyca/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@JhalakCaptus"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/school/jcboseust/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>ELEMENTS CULMYCA<span> all rights reserved</span></p>
+        </div>
+    </footer>
+    </div>
+
+    <!-- <div class="cursor"></div>
+    <div class="cursor-border"></div> -->
+    
+    <script src="./script.js"></script>
+    
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:300,
+            duration:1500
+        });
+    </script>
+    <!-- <script src="./assets/pointer/pointer.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
+    <script src="./imgslider.js"></script>
+</body>
+</html>
+
+

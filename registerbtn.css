@@ -1,0 +1,27 @@
+a{
+    position: relative;
+    background: #fff;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight:400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+a:hover{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+
+}
+
+a:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #000;
+
+}
